@@ -9,7 +9,7 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: Home,
-      meta: { title: '首页' },
+      meta: { title: '登录', hideTabbar: true },
     },
     {
       path: '/profile',
