@@ -46,6 +46,10 @@ textarea {
   padding-bottom: calc(72px + env(safe-area-inset-bottom));
 }
 
+.app-content--fullscreen {
+  padding-bottom: 0;
+}
+
 .page {
   padding: 18px 16px 28px;
 }
