@@ -1,13 +1,14 @@
 <template>
-  <van-tabbar v-model="active" route safe-area-inset-bottom>
-    <van-tabbar-item replace to="/" icon="home-o">首页</van-tabbar-item>
-    <van-tabbar-item replace to="/profile" icon="user-o">我的</van-tabbar-item>
-  </van-tabbar>
+  <Tabbar v-model="active" route safe-area-inset-bottom>
+    <TabbarItem replace to="/" icon="home-o">首页</TabbarItem>
+    <TabbarItem replace to="/profile" icon="user-o">我的</TabbarItem>
+  </Tabbar>
 </template>
 
 <script setup>
 import { computed } from 'vue'
 import { useRoute } from 'vue-router'
+import { Tabbar, TabbarItem } from 'vant'
 
 const route = useRoute()
 
